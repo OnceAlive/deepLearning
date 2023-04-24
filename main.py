@@ -19,4 +19,9 @@ plt.savefig('mnist.png')
 train_images = train_images.reshape((60000, 28 * 28))
 train_images.astype('float32') / 255
 
+train_images = train_images.reshape((10000, 28 * 28))
+train_images.astype('float32') / 255
+
+
+
 train_labels = tf.keras.utils.to_categorical(train_labels)
